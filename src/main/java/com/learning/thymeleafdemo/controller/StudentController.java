@@ -21,6 +21,7 @@ public class StudentController {
     @PostMapping("/processStudentForm")
     public String processForm(@ModelAttribute("student") Student theStudent){
         System.out.println("theStudent: "+theStudent.getFirstName()+" "+theStudent.getLastName());
+        System.out.println("this is a restored version");
         return "student-confirmation";
     }
 }
